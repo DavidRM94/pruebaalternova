@@ -1,38 +1,207 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: #ECF1FE;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+h1{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
+}
+.imagen{
+  width: 150px;
+  max-height: 200px;
+  border-radius: 5px;
+}
+.texto1{
+  color: #F73653;
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Patrick Hand', cursive;
+}
+.texto2{
+  color: #282c34;
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Patrick Hand', cursive;
+}
+.texto3{
+  color: #4F5563;
+  font-size: 17px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Patrick Hand', cursive;
+}
+.texto4{
+  color: white;
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Patrick Hand', cursive;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tarjeta{
+  background: white;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  border: 1px solid #282c34;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  min-height: 300px;
+}
+.tarjeta:hover{
+  box-shadow:1px 1px 30px 1px #CBCED5;
+
+}
+.contimg{
+  border-bottom: #F73653 1px solid;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+}
+.infprod{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.botonprod{
+  background: none;
+  color: #F73653;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  cursor: pointer;
+}
+.botonprod:hover{
+  border-bottom: #F73653 1px solid;
+}
+.subbotonprod{
+  background: none;
+  color: #F73653;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  cursor: pointer;
+}
+.subbotonprod:hover{
+  border: #282c34 1px solid;
+  border-radius: 3px;
+}
+
+.contcentral{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 30px 30px 30px 30px;
+  gap:30px;
+}
+.secprod{
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.contpedido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: #4F5563 1px solid;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+.secped{
+  grid-column: 2;
+}
+
+.itempedido{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  border-bottom: #F73653 1px solid;
+  width: 100%;
+  gap:10px
+}
+
+.resumenpedido{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5px 10px 5px;
+  width: 100%;
+}
+.campotexto{
+  background: none;
+  border: none;
+  border-bottom: #F73653 1px solid;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  color: #282c34;
+  width: 150px;
+  outline: none;
+}
+
+.busqueda{
+  margin: 10px 5px 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap:5px;
+}
+.TarjetaModal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  background-color: #282c3470;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px 5px 5px;
+  z-index: 101;
+}
+.modalact{
+  position:fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(6px);
 }

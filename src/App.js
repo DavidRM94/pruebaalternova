@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { inventario } from './inventario.js';
+import Homepag from './componentes/Homepag';
 function App() {
+  console.log(inventario)
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav className='navbar'>
+          <h1>Alternova Shop</h1>
+        </nav>
+        
+        
       </header>
+      <Homepag></Homepag>
     </div>
   );
 }
